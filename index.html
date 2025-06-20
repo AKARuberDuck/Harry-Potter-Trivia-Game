@@ -4,11 +4,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <title>Harry Potter Trivia Game</title>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Load Supabase from CDN -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
   const SUPABASE_URL = 'https://ijxnlsywdbpzbrqiqubs.supabase.co';
-  const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY';
-  const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+  const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqeG5sc3l3ZGJwemJycWlxdWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA0NDc5MTAsImV4cCI6MjA2NjAyMzkxMH0.pu29rw0I6qML8HVqhBXPT4TWJA5_WmeTcfl7IToIA7I'; // paste your real anon key here
+  window.supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 </script>
   <link rel="stylesheet" href="style.css" />
   <link rel="manifest" href="manifest.json" />
