@@ -1,7 +1,7 @@
 {
   "name": "Harry Potter Trivia Game",
   "short_name": "HP Trivia",
-  "start_url": "index.html",
+  "start_url": "/Harry-Potter-Trivia-Game/",
   "display": "standalone",
   "theme_color": "#d4af37",
   "background_color": "#000000",
