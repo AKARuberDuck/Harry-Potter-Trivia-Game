@@ -14,7 +14,7 @@
 
 ## **📱 Add to Home Screen**
 - Mobile: Tap ```Share``` > ```Add to Home Screen```
-- Desktop: Look for "```Install App```" icon in browser bar
+- Desktop: Look for ```Install App``` icon in browser bar
 
 ## **🎨 Credits**
 - Developed by: ```AKARuberDuck```
