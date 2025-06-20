@@ -1,10 +1,14 @@
-// ⬇️ Supabase setup
-const SUPABASE_URL = "https://ijxnlsywdbpzbrqiqubs.supabase.co";
-const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImlqeG5sc3l3ZGJwemJycWlxdWJzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA0NDc5MTAsImV4cCI6MjA2NjAyMzkxMH0.pu29rw0I6qML8HVqhBXPT4TWJA5_WmeTcfl7IToIA7I";
+// 🧪 Supabase Setup
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 
-const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
-// Then use supabaseClient everywhere
+const SUPABASE_URL = 'https://ijxnlsywdbpzbrqiqubs.supabase.co';
+const SUPABASE_KEY = 'YOUR_SUPABASE_ANON_KEY'; // replace this with your actual anon key
+const supabaseClient = createClient(SUPABASE_URL, SUPABASE_KEY);
+
+// 🧙‍♂️ Start button fix
+function startGameNow() {
+  loadQuestion();
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   let score = 0;
