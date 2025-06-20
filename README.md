@@ -11,3 +11,13 @@
 - 📦 PWA Enabled — Install & play offline
 - 🌗 Dark / Light Mode Toggle
 - 🧙 Immersive Hogwarts-style UI
+
+📱 Add to Home Screen
+- Mobile: Tap Share > Add to Home Screen
+- Desktop: Look for "Install App" icon in browser bar
+
+🎨 Credits
+- Developed by: AKARuberDuck
+- Wizarding inspiration by J.K. Rowling (no assets used from original media)
+- Trivia data sourced via The Trivia API
+- Fonts: Google Fonts - Cinzel Decorative & IM Fell English
