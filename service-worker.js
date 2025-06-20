@@ -1,13 +1,13 @@
 const CACHE_NAME = "hp-trivia-v1";
 const ASSETS = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/manifest.json",
-  "/icon-192.png",
-  "/icon-512.png",
-  "/intro-scene.jpg"
+  "/Harry-Potter-Trivia-Game/",
+  "/Harry-Potter-Trivia-Game/index.html",
+  "/Harry-Potter-Trivia-Game/style.css",
+  "/Harry-Potter-Trivia-Game/script.js",
+  "/Harry-Potter-Trivia-Game/manifest.json",
+  "/Harry-Potter-Trivia-Game/icon-192.png",
+  "/Harry-Potter-Trivia-Game/icon-512.png",
+  "/Harry-Potter-Trivia-Game/intro-scene.jpg"
 ];
 
 self.addEventListener("install", e => {
