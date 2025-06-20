@@ -20,4 +20,4 @@
 - Developed by: ```AKARuberDuck```
 - Wizarding inspiration by ```J.K. Rowling``` (no assets used from original media)
 - Trivia data sourced via ```The Trivia API```
-- Fonts: ```Google Fonts``` - Cinzel Decorative & IM Fell English
+- Fonts: ```Google Fonts``` - ```Cinzel Decorative``` & ```IM Fell English```
