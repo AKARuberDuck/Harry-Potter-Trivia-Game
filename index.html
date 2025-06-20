@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Harry Potter Trivia Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" />
+  <meta name="theme-color" content="#d4af37" />
+</head>
+<body>
+
+  <!-- 🔮 Intro Title Screen -->
+  <section id="titleScreen" class="fullscreen">
+    <img src="intro-scene.jpg" alt="Harry Potter Magic Scene" />
+    <button onclick="startGameNow()">Start Game</button>
+  </section>
+
+  <!-- 👤 Login -->
+  <section id="intro" class="hidden">
+    <input id="username" placeholder="First Last" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="startBtn">Start Game</button>
+  </section>
+
+  <!-- 🎓 Sorting Hat -->
+  <section id="sortingHat" class="hidden">
+    <h2>🎓 Sorting Hat Quiz</h2>
+    <div id="sortingQuestions"></div>
+    <button id="submitSorting">Confirm House</button>
+  </section>
+
+  <!-- 🧣 Portrait Builder -->
+  <section id="portrait" class="hidden">
+    <h3>Create Your Magical Portrait</h3>
+    <label>Scarf Color:
+      <select id="scarfColor">
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+    </label>
+    <label>Wand Core:
+      <select id="wandCore">
+        <option>Unicorn Hair</option>
+        <option>Phoenix Feather</option>
+        <option>Dragon Heartstring</option>
+      </select>
+    </label>
+    <label>Patronus:
+      <select id="patronus">
+        <option>🦌 Stag</option>
+        <option>🦡 Badger</option>
+        <option>🦅 Eagle</option>
+        <option>🐍 Snake</option>
+      </select>
+    </label>
+    <button id="savePortrait">Save Portrait</button>
+  </section>
+
+  <!-- 🧠 Game Area -->
+  <section id="game" class="hidden">
+    <p>
+      <strong>House:</strong> <span id="house"></span> |
+      <strong>Score:</strong> <span id="score">0</span>
+    </p>
+    <select id="quizSelector">
+      <option value="general">🧠 General Trivia</option>
+      <option value="magic">🪄 Magic & Spells</option>
+      <option value="creatures">🐉 Creatures</option>
+      <option value="mythology">🏛️ Mythology</option>
+      <option value="biologyYEC">🧬 Biology & History (YEC)</option>
+    </select>
+    <button id="startQuizBtn">Start Quiz</button>
+    <h2 id="question"></h2>
+    <div id="answers"></div>
+    <p id="feedback"></p>
+  </section>
+
+  <!-- 🎁 Artifact Unlock -->
+  <section id="artifact-section" class="hidden">
+    <h3>🎁 Magical Artifact Unlocked!</h3>
+    <p id="artifact-name">Artifact: None</p>
+  </section>
+
+  <!-- 🦉 Owl Post -->
+  <section id="owlPost" class="hidden">
+    <h3>🦉 Owl Post</h3>
+    <p id="owlMessage"></p>
+  </section>
+
+  <!-- 📜 Daily Challenge -->
+  <section id="dailyChallenge" class="hidden">
+    <h3>📜 Daily Challenge</h3>
+    <p id="challengeText"></p>
+    <button id="completeChallenge">Mark as Complete</button>
+  </section>
+
+  <!-- 📖 Spellbook -->
+  <section id="spellbook" class="hidden">
+    <h2>📖 Spell Library</h2>
+    <ul id="spellList"></ul>
+  </section>
+
+  <!-- 🧪 Potion Lab -->
+  <section id="potionLab" class="hidden">
+    <h2>🧪 Potion Lab</h2>
+    <div id="potionGrid"></div>
+    <p id="potionResult"></p>
+  </section>
+
+  <!-- 🏦 Vault -->
+  <section id="vault" class="hidden">
+    <h2>🏦 Gringotts Vault</h2>
+    <table>
+      <thead><tr><th>Rank</th><th>Initials</th><th>House</th><th>Score</th></tr></thead>
+      <tbody id="vault-table"></tbody>
+    </table>
+  </section>
+
+  <!-- 🎛️ Controls -->
+  <footer>
+    <button id="toggleTheme">🌗 Theme</button>
+    <button id="toggleFullscreen">🖥️ Fullscreen</button>
+    <button id="viewVault">🏦 View Vault</button>
+    <button id="openSpellbook">📖 Spells</button>
+    <button id="openPotionLab">🧪 Potions</button>
+  </footer>
+
+  <!-- 📜 Scripts -->
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('✅ SW registered'))
+        .catch(err => console.warn('SW error', err));
+    }
+  </script>
+</body>
+</html>

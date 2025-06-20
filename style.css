@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=IM+Fell+English&display=swap');
+
+:root {
+  --bg-color: #0d0d0d;
+  --text-color: #f9f5dc;
+  --accent: #d4af37;
+  --button-bg: #d4af37;
+  --button-text: #1a1a1a;
+}
+
+body.light {
+  --bg-color: #f5f5f5;
+  --text-color: #1a1a1a;
+  --accent: #444;
+  --button-bg: #444;
+  --button-text: #f5f5f5;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'IM Fell English', serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease, color 0.5s ease;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', serif;
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+input, select, button {
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 800px;
+}
+
+#answers button {
+  display: block;
+  width: 60%;
+  margin: 0.5rem auto;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--accent);
+  padding: 0.5rem;
+}
+
+#spellList li,
+#potionGrid div {
+  list-style: none;
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.6rem;
+  border-radius: 4px;
+}
+
+#potionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+#potionGrid div {
+  cursor: pointer;
+  border: 1px solid var(--accent);
+}
+
+/* 🔮 Title Screen Styling */
+#titleScreen.fullscreen {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#titleScreen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#titleScreen button {
+  position: absolute;
+  bottom: 10%;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
